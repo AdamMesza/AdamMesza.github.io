@@ -1,1 +1,0 @@
-# AdamMesza.github.io
