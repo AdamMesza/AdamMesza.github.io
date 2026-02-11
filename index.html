@@ -5,6 +5,8 @@
   <title>Adam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
+  
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -25,6 +27,7 @@
       background: #fff;
       padding: 30px;
       border-radius: 8px;
+
     }
     h1 {
       margin-top: 0;
@@ -33,6 +36,40 @@
       color: #0077cc;
       text-decoration: none;
     }
+
+    .project-card {
+      display: flex;
+      align-items: center; /* Centers items vertically */
+      gap: 20px;           /* Adds space between text and GIF */
+      max-width: 700px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    
+    .project-info {
+      flex: 1;             /* Takes up available space */
+    }
+    
+    .project-visual {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .project-visual img {
+      max-width: 100%;     /* Prevents the GIF from overflowing */
+      border-radius: 4px;
+    }
+    
+    /* Responsive fix: Stack vertically on small screens */
+    @media (max-width: 600px) {
+      .project-card {
+        flex-direction: column;
+      }
+    }    
+
+
   </style>
 </head>
 <body>
@@ -56,16 +93,20 @@
   </div>
 
 
-
-  <h1>     </h1>
-
-
-
-  <div class="container2">
-    <img src="tucnak.png" alt="tucnak" style="width: 100%; border-radius: 0px;">
-    <p style="text-align: center; font-size: 13px; color: #777;">Tučnak</p>
+  <div class="project-card">
+    <div class="project-info">
+      <h2>Název Projektu</h2>
+      <p>Tohle je popis mojí úžasné hry nebo aplikace. Vysvětli tady, co jsi použil za technologie.</p>
+      <a href="#">Odkaz na demo</a>
+    </div>
   </div>
-  <h1>     </h1>
+  
+  <div class="project-visual">
+    <img src="https://via.placeholder.com/300x200.gif" alt="Ukázka projektu">
+  </div>
+</div>
+  
+  
   <div class="container">
     <p>
       Děkuji, že jste navštívili můj profil!
@@ -73,4 +114,5 @@
   </div>
 </body>
 </html>
+
 
