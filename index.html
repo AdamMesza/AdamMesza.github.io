@@ -37,38 +37,17 @@
       text-decoration: none;
     }
 
-    .project-card {
-      display: flex;
-      align-items: center; /* Centers items vertically */
-      gap: 20px;           /* Adds space between text and GIF */
-      max-width: 700px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
+    .left-box {
+      flex: 1;               /* Zabere 50 % místa */
+      background: #f9f9f9;  /* Jen pro ukázku */
+      padding: 15px;
     }
-    
-    .project-info {
-      flex: 1;             /* Takes up available space */
-    }
-    
-    .project-visual {
-      flex: 1;
-      text-align: center;
-    }
-    
-    .project-visual img {
-      max-width: 100%;     /* Prevents the GIF from overflowing */
-      border-radius: 4px;
-    }
-    
-    /* Responsive fix: Stack vertically on small screens */
-    @media (max-width: 600px) {
-      .project-card {
-        flex-direction: column;
-      }
-    }    
 
+    .left-box {
+      flex: 1;               /* Zabere 50 % místa */
+      background: #f9f9f9;  /* Jen pro ukázku */
+      padding: 15px;
+    }
 
   </style>
 </head>
@@ -93,18 +72,17 @@
   </div>
 
 
-  <div class="project-card">
-    <div class="project-info">
-      <h2>Název Projektu</h2>
-      <p>Tohle je popis mojí úžasné hry nebo aplikace. Vysvětli tady, co jsi použil za technologie.</p>
-      <a href="#">Odkaz na demo</a>
+  <div class="parent-container">
+    <div class="left-box">
+      <h3>Levá strana</h3>
+      <p>Tady můžu mít popisek projektu.</p>
+    </div>
+  
+    <div class="right-box">
+      <h3>Pravá strana</h3>
+      <p>Tady bude obrázek nebo GIF.</p>
     </div>
   </div>
-  
-  <div class="project-visual">
-    <img src="https://via.placeholder.com/300x200.gif" alt="Ukázka projektu">
-  </div>
-</div>
   
   
   <div class="container">
@@ -114,5 +92,6 @@
   </div>
 </body>
 </html>
+
 
 
