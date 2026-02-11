@@ -36,11 +36,19 @@
 
     .containerproject {
       display: flex;
+      flex-direction: row;
       max-width: 700px;
       margin: auto;
       background: #fff;
       padding: 30px;
       border-radius: 8px;
+    
+    @media (max-width: 768px) {
+      .containerproject {
+        flex-direction: column;
+      }
+
+    }
 
     }
     h1 {
@@ -129,6 +137,7 @@
   </div>
 </body>
 </html>
+
 
 
 
